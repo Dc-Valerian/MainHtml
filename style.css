@@ -3,7 +3,7 @@
 }
 
 .header {
-  background-color: yellow;
+  background-color: cyan;
   height: 50px;
   display: flex;
   align-items: center;
@@ -249,6 +249,76 @@
   border-color: white;
   th,
   td {
+    color: white;
+  }
+}
+
+.footter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.footer {
+  background-color: black;
+  border-radius: 20px;
+  width: 80%;
+  padding: 35px 20px 30px 20px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.footer_first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_box {
+  width: 25%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+
+  h1{
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.footer_link {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  
+}
+
+.footer_info {
+  display: flex;
+  gap: 10px;
+
+  p{
+    color: white;
+  }
+}
+
+
+.icon_location{
+  color: white;
+}
+
+
+.footer_second{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3{
     color: white;
   }
 }
