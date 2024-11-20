@@ -30,8 +30,6 @@
   }
 }
 
-
-
 .bioHolder {
   /* background-color: red; */
   display: flex;
@@ -322,11 +320,13 @@
   }
 }
 
-
-
 /* RESPONSIVENESS CODE */
 
 @media screen and (max-width: 500px) {
+  * {
+    overflow-x: hidden;
+  }
+
   .heroSection {
     img {
       height: 300px;
@@ -334,31 +334,35 @@
     }
   }
 
-  .profileImg{
-    height:150px;
-    width:150px;
+  .profileImg {
+    height: 150px;
+    width: 150px;
   }
 
-  .bioHolder{
-    h1{
+  .bioHolder {
+    position: absolute;
+    bottom:450px;
+    h1 {
       font-size: 25px;
     }
 
-    h2{
+    h2 {
       font-size: 17px;
     }
 
-    h3{
+    h3 {
       font-size: 16px;
     }
   }
 
-
-  .pHolder{
+  .AboutSection{
+    margin-top: 200px;
+  }
+  .pHolder {
     width: 90%;
   }
 
-  .experienceBoxes{
+  .experienceBoxes {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -366,61 +370,55 @@
     align-items: center;
   }
 
-  .box1{
+  .box1 {
     width: 90%;
   }
 
-
-
-.downloadSection{
-  p{
-    width: 90%;
+  .downloadSection {
+    p {
+      width: 90%;
+    }
   }
-}
 
-
-.contactDetails{
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 20px;
-}
-
-
-.contactmap{
-  overflow: hidden;
-  width: 100%;
-}
-
-.contactForm{
-  width: 100%;
-}
-
-
-.expensesHolder{
-  overflow: hidden;
-
-  table{
-    width: 400px;
-  }
-}
-
-
-.footer_first{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-
-.footer_box{
-  width: 100%;
-}
-
-
-.footer_second{
+  .contactDetails {
     display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: start;
-}
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .contactmap {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  .expensesHolder {
+    overflow: hidden;
+
+    table {
+      width: 400px;
+    }
+  }
+
+  .footer_first {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer_box {
+    width: 100%;
+  }
+
+  .footer_second {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+
+
 }
