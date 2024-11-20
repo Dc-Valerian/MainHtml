@@ -30,6 +30,8 @@
   }
 }
 
+
+
 .bioHolder {
   /* background-color: red; */
   display: flex;
@@ -281,7 +283,7 @@
   gap: 10px;
   flex-direction: column;
 
-  h1{
+  h1 {
     color: white;
   }
 
@@ -295,30 +297,130 @@
   display: flex;
   gap: 10px;
   flex-direction: column;
-  
 }
 
 .footer_info {
   display: flex;
   gap: 10px;
 
-  p{
+  p {
     color: white;
   }
 }
 
-
-.icon_location{
+.icon_location {
   color: white;
 }
 
-
-.footer_second{
+.footer_second {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  h3{
+  h3 {
     color: white;
   }
+}
+
+
+
+/* RESPONSIVENESS CODE */
+
+@media screen and (max-width: 500px) {
+  .heroSection {
+    img {
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  .profileImg{
+    height:150px;
+    width:150px;
+  }
+
+  .bioHolder{
+    h1{
+      font-size: 25px;
+    }
+
+    h2{
+      font-size: 17px;
+    }
+
+    h3{
+      font-size: 16px;
+    }
+  }
+
+
+  .pHolder{
+    width: 90%;
+  }
+
+  .experienceBoxes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box1{
+    width: 90%;
+  }
+
+
+
+.downloadSection{
+  p{
+    width: 90%;
+  }
+}
+
+
+.contactDetails{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+
+.contactmap{
+  overflow: hidden;
+  width: 100%;
+}
+
+.contactForm{
+  width: 100%;
+}
+
+
+.expensesHolder{
+  overflow: hidden;
+
+  table{
+    width: 400px;
+  }
+}
+
+
+.footer_first{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.footer_box{
+  width: 100%;
+}
+
+
+.footer_second{
+    display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
 }
