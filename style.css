@@ -340,8 +340,7 @@
   }
 
   .bioHolder {
-    position: absolute;
-    bottom:450px;
+   
     h1 {
       font-size: 25px;
     }
@@ -355,9 +354,7 @@
     }
   }
 
-  .AboutSection{
-    margin-top: 200px;
-  }
+ 
   .pHolder {
     width: 90%;
   }
@@ -421,4 +418,17 @@
   }
 
 
+}
+
+
+
+@media screen and (max-width:450px) {
+   .AboutSection{
+    margin-top: 200px;
+  }
+
+  .bioHolder{
+     position: absolute;
+    bottom:450px;
+  }
 }
