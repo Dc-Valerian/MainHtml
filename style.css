@@ -21,6 +21,24 @@
   }
 }
 
+
+
+.header_wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+
+.hamburger {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
 .heroSection {
   overflow: hidden;
   position: relative;
@@ -340,7 +358,7 @@
   }
 
   .bioHolder {
-   
+   display: none;
     h1 {
       font-size: 25px;
     }
@@ -354,7 +372,9 @@
     }
   }
 
- 
+ .AboutSection{
+  margin-top: -100px;
+ }
   .pHolder {
     width: 90%;
   }
@@ -422,6 +442,29 @@
 
 
 
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: none; /* Initially hidden for mobile */
+}
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
 @media screen and (max-width:450px) {
    .AboutSection{
     margin-top: 200px;
@@ -430,5 +473,41 @@
   .bioHolder{
      position: absolute;
     bottom:450px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .nav {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    background-color: red;
+  }
+
+
+  .nav.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
   }
 }

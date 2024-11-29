@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="fontawesome-free-6.7.0-web/css/all.css" />
     <title>My Website</title>
+   <script src="./script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <a href="">Home</a>
-      <a href="./about.html">About</a>
-      <a href="">Services</a>
-      <a href="">Contact Us</a>
-    </header>
+ <header class="header">
+    <div class="header_wrapper">
+      <div class="logo">Valerian</div>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="./about.html">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
 
     <section class="heroSection">
       <img src="./images/bg.jpg" alt="" />
@@ -173,7 +182,7 @@
             possimus quaerat omnis,
           </p>
 
-          <button class="button">Download</button>
+          <button id="btn" class="button">Download</button>
         </div>
         <!-- DOWNLOAD END -->
       </div>
@@ -393,5 +402,11 @@
       </footer>
     </div>
     <!-- FOOTER ENDS -->
+
+    <script>
+      btn.addEventListener("click", function () {
+        console.log("Button has been clicked again");
+      });
+    </script>
   </body>
 </html>
